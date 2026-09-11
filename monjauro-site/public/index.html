@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Monjaro Natural | Achadinhos da Gigih</title>
+  <meta name="description" content="Monjaro Natural em kits de 1, 2 ou 3 potes com frete grátis.">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="top">🚚 FRETE GRÁTIS PARA TODO O BRASIL</div>
+
+  <header>
+    <a class="logo" href="/">Achadinhos da Gigih ✨</a>
+    <span class="secure">🔒 Pagamento processado pelo PagBank</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <div class="tag">OFERTA ESPECIAL</div>
+        <h1>Monjaro <span>Natural</span></h1>
+        <p class="lead">Escolha seu kit. O frete já está incluso no preço e o pagamento é feito em ambiente seguro do PagBank.</p>
+        <div class="ticks">
+          <span>✓ 120 cápsulas por pote</span>
+          <span>✓ Frete grátis</span>
+          <span>✓ Pix e cartão no PagBank</span>
+        </div>
+        <a class="cta" href="#kits">ESCOLHER MEU KIT</a>
+        <p class="legal">Suplemento alimentar. Consulte composição, modo de uso e advertências no rótulo do fabricante.</p>
+      </div>
+
+      <div class="hero-card">
+        <img src="/img/hero.jpg" alt="Monjaro Natural - kit com 3 potes">
+        <div class="hero-badge">🔥 MAIS ECONOMIA NO KIT</div>
+      </div>
+    </section>
+
+    <section class="trust">
+      <div><b>🔒 Checkout PagBank</b><small>Você paga fora desta página, no ambiente seguro do PagBank.</small></div>
+      <div><b>🚚 Frete grátis</b><small>O custo padrão de envio já está incluído.</small></div>
+      <div><b>💬 Atendimento</b><small>Acompanhe seu pedido após a confirmação.</small></div>
+    </section>
+
+    <section id="kits" class="kits">
+      <div class="title">
+        <span>ESCOLHA SEU KIT</span>
+        <h2>Quanto mais leva, menor o valor por pote.</h2>
+      </div>
+
+      <div class="grid">
+        <article class="kit" data-kit="1" data-price="54.90">
+          <img src="/img/1-pote.jpg" alt="1 pote Monjaro Natural">
+          <h3>1 Pote</h3>
+          <p>120 cápsulas</p>
+          <div class="price">R$ <b>54,90</b></div>
+          <div class="per">R$ 54,90 por pote</div>
+          <div class="frete">🚚 FRETE GRÁTIS</div>
+          <button>COMPRAR 1 POTE</button>
+        </article>
+
+        <article class="kit featured" data-kit="2" data-price="84.90">
+          <div class="ribbon">⭐ MAIS ESCOLHIDO</div>
+          <img src="/img/2-potes.jpg" alt="2 potes Monjaro Natural">
+          <h3>2 Potes</h3>
+          <p>240 cápsulas</p>
+          <div class="price">R$ <b>84,90</b></div>
+          <div class="per"><strong>R$ 42,45</strong> por pote</div>
+          <div class="save">Economize R$ 24,90 em relação a 2 kits individuais</div>
+          <div class="frete">🚚 FRETE GRÁTIS</div>
+          <button>QUERO 2 POTES</button>
+        </article>
+
+        <article class="kit" data-kit="3" data-price="109.90">
+          <img src="/img/3-potes.jpg" alt="3 potes Monjaro Natural">
+          <h3>3 Potes</h3>
+          <p>360 cápsulas</p>
+          <div class="price">R$ <b>109,90</b></div>
+          <div class="per"><strong>R$ 36,63</strong> por pote</div>
+          <div class="save">Economize R$ 54,80 em relação a 3 kits individuais</div>
+          <div class="frete">🚚 FRETE GRÁTIS</div>
+          <button>QUERO 3 POTES</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="about">
+      <div>
+        <span>TRANSPARÊNCIA</span>
+        <h2>Compra simples e segura.</h2>
+        <p>O site envia apenas os dados necessários para criar seu checkout. O número do cartão, CVV e credenciais bancárias não passam pelo nosso servidor: o pagamento acontece no PagBank.</p>
+      </div>
+      <div class="steps">
+        <div><b>01</b><p>Escolha o kit</p></div>
+        <div><b>02</b><p>Informe nome, contato e endereço</p></div>
+        <div><b>03</b><p>Vá para o checkout do PagBank</p></div>
+        <div><b>04</b><p>Conclua o pagamento</p></div>
+      </div>
+    </section>
+
+    <section class="warning">
+      <h2>Informações importantes</h2>
+      <p>Esta página não promete emagrecimento, cura, tratamento ou resultado garantido. Antes de publicar comercialmente, confira se as informações de composição, registro/notificação aplicável, advertências e rotulagem do produto estão corretas e mantenha políticas de entrega, troca, devolução e privacidade disponíveis.</p>
+    </section>
+  </main>
+
+  <dialog id="checkout">
+    <form id="orderForm">
+      <div class="modal-head">
+        <div>
+          <span>FINALIZAR PEDIDO</span>
+          <h2 id="selectedTitle">2 Potes</h2>
+          <p id="selectedPrice">R$ 84,90 • Frete grátis</p>
+        </div>
+        <button type="button" class="close" id="closeModal">✕</button>
+      </div>
+
+      <div class="safe-note">🔒 Ao continuar, você será redirecionada para o <b>PagBank</b> para escolher Pix ou cartão.</div>
+
+      <div class="fields">
+        <label>Nome completo
+          <input required name="name" autocomplete="name" placeholder="Nome e sobrenome">
+        </label>
+        <label>E-mail
+          <input required type="email" name="email" autocomplete="email" placeholder="voce@email.com">
+        </label>
+        <label>WhatsApp
+          <input required name="phone" inputmode="tel" autocomplete="tel" placeholder="(37) 99999-9999">
+        </label>
+        <label>CPF
+          <input required name="tax_id" inputmode="numeric" maxlength="14" placeholder="Somente números">
+        </label>
+        <label>CEP
+          <input required name="postal_code" inputmode="numeric" autocomplete="postal-code" maxlength="9">
+        </label>
+        <label>UF
+          <input required name="region_code" maxlength="2" autocomplete="address-level1" placeholder="MG">
+        </label>
+        <label class="wide">Rua / Avenida
+          <input required name="street" autocomplete="address-line1">
+        </label>
+        <label>Número
+          <input required name="number">
+        </label>
+        <label>Complemento
+          <input name="complement">
+        </label>
+        <label>Bairro
+          <input required name="locality">
+        </label>
+        <label>Cidade
+          <input required name="city" autocomplete="address-level2">
+        </label>
+      </div>
+
+      <div class="sum"><span>Total</span><b id="total">R$ 84,90</b></div>
+      <button class="pay" id="payButton" type="submit">IR PARA O PAGBANK →</button>
+      <p id="error" class="error"></p>
+    </form>
+  </dialog>
+
+  <div class="mobile">
+    <div><small>A partir de</small><b>R$ 54,90</b></div>
+    <a href="#kits">COMPRAR</a>
+  </div>
+
+  <footer>
+    <b>Achadinhos da Gigih ✨</b>
+    <p>Inclua aqui, antes de publicar: nome/razão social do vendedor, CPF/CNPJ quando aplicável, contato, endereço comercial, política de privacidade, termos, política de troca/devolução e prazos de entrega.</p>
+  </footer>
+
+<script src="/app.js"></script>
+</body>
+</html>
