@@ -45,3 +45,36 @@ document.querySelector("#orderForm").addEventListener("submit", async (e)=>{
     button.textContent="IR PARA O MERCADO PAGO →";
   }
 });
+
+(async()=>{
+  const source = [...document.querySelectorAll("video source")]
+    .find(el => el.getAttribute("src") === "./videos/614284.mp4");
+  if(!source) return;
+
+  try{
+    const paths = [
+      "./videos/618845/part0.txt",
+      "./videos/618845/part1.txt",
+      "./videos/618845/part3.txt",
+      "./videos/618845/part4.txt",
+      "./videos/618845/part5.txt",
+      "./videos/618845/part6.txt"
+    ];
+    const chunks = await Promise.all(paths.map(async path=>{
+      const r = await fetch(path);
+      if(!r.ok) throw new Error(`Falha ao carregar ${path}`);
+      return r.text();
+    }));
+    const b64 = chunks.join("");
+    const binary = atob(b64);
+    const bytes = new Uint8Array(binary.length);
+    for(let i=0;i<binary.length;i++) bytes[i] = binary.charCodeAt(i);
+    const url = URL.createObjectURL(new Blob([bytes],{type:"video/mp4"}));
+    const video = source.closest("video");
+    source.remove();
+    video.src = url;
+    video.load();
+  }catch(err){
+    console.warn("Não foi possível carregar o vídeo 618845:", err);
+  }
+})();
