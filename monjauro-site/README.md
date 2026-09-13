@@ -8,12 +8,12 @@
 - Prints de avaliações.
 - Fotos do produto e composição.
 - Checkout com formulário de entrega.
-- Integração serverless preparada para PagBank.
+- Integração serverless preparada para Mercado Pago Checkout Pro.
 - Deploy preparado para Vercel.
 
 ## Para o pagamento funcionar de verdade
 No Vercel, crie as variáveis de ambiente:
-- `PAGBANK_TOKEN` = token da sua conta PagBank
+- `MERCADOPAGO_ACCESS_TOKEN` = Access Token da aplicação no Mercado Pago
 - `SITE_URL` = URL pública do site, por exemplo `https://seusite.vercel.app`
 
 Sem o token, o site abre normalmente, mas o checkout não consegue criar o pagamento.
@@ -32,5 +32,5 @@ Também confirme se os preços do fornecedor continuam os mesmos antes de aceita
 ## Deploy
 1. Extraia este ZIP.
 2. Importe a pasta no Vercel.
-3. Configure `PAGBANK_TOKEN` e `SITE_URL`.
+3. Configure `MERCADOPAGO_ACCESS_TOKEN` e `SITE_URL`.
 4. Faça o deploy.
