@@ -2,7 +2,7 @@
 
 ## O que já está pronto
 - Landing page responsiva.
-- 3 ofertas: 1 pote R$54,90; 2 potes R$84,90; 3 potes R$109,90.
+- 3 ofertas: 1 pote (60 cápsulas) R$54,90; 2 potes (120 cápsulas) R$84,90; 3 potes (180 cápsulas) R$109,90.
 - Frete padrão embutido no preço.
 - Seção com 3 vídeos do TikTok, incluindo o principal vídeo de vendas.
 - Prints de avaliações.
