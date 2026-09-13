@@ -37,11 +37,11 @@ document.querySelector("#orderForm").addEventListener("submit", async (e)=>{
     });
     const data = await response.json();
     if(!response.ok) throw new Error(data.error || "Não foi possível criar o checkout.");
-    if(!data.pay_url) throw new Error("O PagBank não retornou o link de pagamento.");
+    if(!data.pay_url) throw new Error("O Mercado Pago não retornou o link de pagamento.");
     window.location.href = data.pay_url;
   }catch(err){
     error.textContent = err.message;
     button.disabled=false;
-    button.textContent="IR PARA O PAGBANK →";
+    button.textContent="IR PARA O MERCADO PAGO →";
   }
 });
