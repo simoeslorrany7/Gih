@@ -1,7 +1,7 @@
 const PRODUCTS = {
-  1: { name: "Mounjaro Natural Uni Ervas - 1 pote (120 capsulas)", amount: 5490 },
-  2: { name: "Mounjaro Natural Uni Ervas - 2 potes (240 capsulas)", amount: 8490 },
-  3: { name: "Mounjaro Natural Uni Ervas - 3 potes (360 capsulas)", amount: 10990 }
+  1: { name: "Mounjaro Natural Uni Ervas - 1 pote (60 capsulas)", amount: 5490 },
+  2: { name: "Mounjaro Natural Uni Ervas - 2 potes (120 capsulas)", amount: 8490 },
+  3: { name: "Mounjaro Natural Uni Ervas - 3 potes (180 capsulas)", amount: 10990 }
 };
 
 function digits(v=""){ return String(v).replace(/\D/g,""); }
